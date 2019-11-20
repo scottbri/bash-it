@@ -53,6 +53,11 @@ export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 export PATH=$PATH:~/bin
 set -o vi
+alias k="kubectl"
+alias kget="kubectl get"
+alias kns="kubectl config set-context $(kubectl config current-context) --namespace"
+eval "$(direnv hook bash)" 2>&1 > /dev/null
+echo "#######################################"
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
