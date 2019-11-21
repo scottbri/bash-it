@@ -55,7 +55,6 @@ export PATH=$PATH:~/bin
 set -o vi
 alias k="kubectl"
 alias kget="kubectl get"
-alias kns="kubectl config set-context $(kubectl config current-context) --namespace"
 eval "$(direnv hook bash)" 2>&1 > /dev/null
 echo "#######################################"
 
