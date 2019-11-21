@@ -58,9 +58,9 @@ alias kget="kubectl get"
 eval "$(direnv hook bash)" 2>&1 > /dev/null
 echo "#######################################"
 
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
-fi
+#if [ -f ~/.bashrc ]; then
+#  . ~/.bashrc
+#fi
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
